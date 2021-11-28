@@ -1,0 +1,16 @@
+.filterDiv{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.filterDiv input{
+    width:170px;
+    border:none; 
+    border-bottom:1px solid gray;
+    margin-left: 80%;
+    font-size:20px;
+}
+.filterDiv input:focus{
+    outline: none;
+    border-bottom:1px solid royalblue;
+    color: royalblue;
+}
