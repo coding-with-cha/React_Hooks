@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import StarRatingComponent from 'react-star-rating-component';
-import {Routes, Route} from 'react-router-dom';
-import {Link} from 'react-router-dom';
-import Descriptions from "./Descriptions";
 
 
 
