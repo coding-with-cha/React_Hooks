@@ -8,6 +8,8 @@ import MovieList from './components/MovieList';
 import photoye from './components/yasak_elma.jpg';
 import photomm from './components/Murder_Mystery.png'
 import photoy from './components/you.jpg'
+import {Routes, Route} from 'react-router-dom';
+import Descriptions from './components/Descriptions';
 
 function App() {
   const [title, setTitle] = useState("");

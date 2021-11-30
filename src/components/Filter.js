@@ -5,9 +5,8 @@ import './styleFilter.css'
 
 const Filter = (props) => {
     const elt = props.elements;
-    const [title, setTitle] = useState("");
-    const [ratings, setRatings] = useState(0);
-    const [rating, setRating] = useState(0);
+
+    const [rating, setRating] = useState("");
 
     const [listMovies, setListMovies] = useState([]);
 
@@ -16,12 +15,22 @@ const Filter = (props) => {
           setListMovies(mv)
         }
   
+        const handleSearchR = () => {
+            var mv = elt.filter((item)=>item.rating == rating) 
+            setListMovies(mv)
+            setRating("")          
+          }
 
     return (
         <div>
             <div className="filterDiv">
                 <input placeholder="Search with title..." type="text"
                        onChange={(e)=>handleSearch(e.target.value)}/>
+                       
+                <input placeholder="Search with rating..." type="text"
+                    value={rating} name="rating"
+                       onChange={(e)=>setRating(e.target.value)}/>
+                <button onClick={handleSearchR}>Search</button>
             </div>
             {listMovies.length? <MovieList elements={listMovies}/> : null}
             
