@@ -4,14 +4,14 @@
     font-family: 'El Messiri', sans-serif;
     text-align: left;
     margin-left: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     font-size: 30px;
     letter-spacing: 7px;
     word-spacing: 10px;
     background: linear-gradient(to left,
-    rgb(240, 165, 240),
-    rgb(228, 157, 169),
-    rgb(173, 173, 216));
+    rgb(54, 146, 74),
+    rgb(14, 144, 219),
+    rgb(219, 41, 41));
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -66,4 +66,11 @@ form{
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+}
+.lien{
+    text-decoration: none;
+}
+.lien .description{
+    margin-top: 5%;
+    color: black;
 }
